@@ -161,7 +161,7 @@ const FormularioRegistroProductos = ({setMostrarTabla, listaProductos, setProduc
                         <option>Sensacion</option>
                     </select>
                 </label>
-                <label className='flex flex-col' htmlFor='variante'>
+                <label className='flex flex-col mx-5' htmlFor='variante'>
                     Variante
                     <select           
                         name='variante' 
