@@ -15,17 +15,16 @@ const Sidebar = () => {
 
   return (
     <nav className='hidden lg:flex lg:w-72 border border-gray-300 h-full flex-col bg-gray-100 p-4 sidebar'>
-      
-        <ImagenSidebar />
+      <ImagenSidebar />
       
       <div className='my-4'>
         <Ruta icono='' ruta='/GestionUsuarios' nombre='Usuarios' />
         <Ruta icono='' ruta='/GestionVentas' nombre='Ventas' />
         <Ruta icono='' ruta='/GestionProductos' nombre='Productos' />
       </div>
-      <button onClick={() => cerrarSesion() } className='bg-red-400 p-1 text-white rounded-md shadow-md hover:bg-red-600'>
-       Cerrar Sesión
-      </button>
+        <button onClick={() => cerrarSesion() } className='bg-red-400 p-1 text-white rounded-md shadow-md hover:bg-red-600'>
+          Cerrar Sesión
+        </button>
     </nav>
   );
 };

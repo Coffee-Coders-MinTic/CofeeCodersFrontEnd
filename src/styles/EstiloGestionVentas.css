@@ -1,5 +1,6 @@
 .tabla {
     margin: 10px;
+    flex-direction: column;
 }
 
 .tabla td,
