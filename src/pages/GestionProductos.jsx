@@ -57,7 +57,7 @@ const GestionProductos = () => {
 
     return (
         <body>
-            <h1 className='font-bold text-4x1 text-center text-gray-800 my-2'>Administración de Productos</h1>
+            <h1 className='font-bold text-4xl text-center text-gray-800 my-2'>Administración de Productos</h1>
             <div align='right'>
                 <button 
                     onClick={()=>{setMostrarTabla(!mostrarTabla);
@@ -121,10 +121,11 @@ const FormularioRegistroProductos = ({setMostrarTabla, listaProductos, setProduc
 
     return (
         <div className='flex flex-col items-center justify-center'>
+
             <form ref={form} onSubmit={submitForm} className='flex flex-col'>
-                <h1 className='font-bold text-2x1 text-blue-500 my-5 text-center'>Registro de productos</h1>
+                <h1 className='font-bold text-2xl text-blue-500 my-5 text-center'>Registro de productos</h1>
                 <div className='flex flex-row'>
-                <label className='flex flex-col m-5' htmlFor='id'>
+                <label className='flex flex-col mx-5' htmlFor='id'>
                     ID del producto
                     <input 
                         name='id'
@@ -140,13 +141,13 @@ const FormularioRegistroProductos = ({setMostrarTabla, listaProductos, setProduc
                         name='nombre'
                         className='bg-gray-50 border border-blue-600 p-2 rounded-lg my-2 w-50'
                         type='text' 
-                        placeholder='Juan Valtez'
+                        placeholder='Juan Valdez'
                         required
                     />
                 </label>
                 </div>
                 <div className='flex flex-row'>
-                <label className='flex flex-col m-5' htmlFor='linea'>
+                <label className='flex flex-col mx-5' htmlFor='linea'>
                     Línea
                     <select
                         name='linea'
@@ -176,7 +177,7 @@ const FormularioRegistroProductos = ({setMostrarTabla, listaProductos, setProduc
                 </label>
                 </div>
                 <div className='flex flex-row'>  
-                <label className='flex flex-col' htmlFor='origen'>
+                <label className='flex flex-col mx-5' htmlFor='origen'>
                     Origen
                     <input 
                         name='origen'
@@ -233,7 +234,7 @@ const TablaProductos = ({listaProductos, setConsulta, getToken}) => {
                 onChange={(e)=>setBuscar(e.target.value)}
                 className='border-2 border-gray-700 px-3 py-1 rounded-md focus:outline-none focus:border-blue-500'
             />
-            <table className='border border-green-500 table-auto'>
+            <table className='tabla border border-green-500 table-auto'>
                 <thead>
                     <tr>
                         <th className='border border-blue-600'>ID</th>
