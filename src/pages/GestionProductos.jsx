@@ -21,7 +21,7 @@ const GestionProductos = () => {
         const obtenerProductos = async ()=>{
             const options = {
                 method: 'GET',
-                url: 'http://localhost:5000/productos/',
+                url: 'https://git.heroku.com/still-shelf-57648.git/productos/',
                 headers: {'Content-Type': 'application/json', Authorization: getToken()}
             };
 
@@ -98,7 +98,7 @@ const FormularioRegistroProductos = ({setMostrarTabla, listaProductos, setProduc
 
         const options = {
             method: 'POST',
-            url: 'http://localhost:5000/productos/',
+            url: 'https://git.heroku.com/still-shelf-57648.git/productos/',
             headers: { 'Content-Type': 'application/json', Authorization: getToken() },
             data: { id: nuevoProducto.id, nombre: nuevoProducto.nombre, linea: nuevoProducto.linea, variante: nuevoProducto.variante, origen: nuevoProducto.origen, precio: nuevoProducto.precio},
             };
@@ -272,7 +272,7 @@ const FilaProducto = ({productos, setConsulta, getToken}) => {
     const actualizarProducto = async ()=>{
         const options = {
             method: 'PATCH',
-            url: `http://localhost:5000/productos/${productos._id}`,
+            url: `https://git.heroku.com/still-shelf-57648.git/productos/${productos._id}`,
             headers: {'Content-Type': 'application/json', Authorization: getToken()},
             data: { ...infoEditarProducto },
         };
