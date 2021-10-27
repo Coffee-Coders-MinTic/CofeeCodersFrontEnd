@@ -2,6 +2,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import React, { useEffect, useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faEdit } from '@fortawesome/free-solid-svg-icons';
+import LogoProductos from 'media/logoproductos.png';
 import { ToastContainer, toast } from 'react-toastify';
 import axios from 'axios';
 import { nanoid } from 'nanoid';
@@ -121,7 +122,7 @@ const FormularioRegistroProductos = ({setMostrarTabla, listaProductos, setProduc
 
     return (
         <div className='flex flex-col items-center justify-center'>
-
+            <img src={LogoProductos} alt='imagen' className='h-40 w-auto my-7 rounded-full' /> 
             <form ref={form} onSubmit={submitForm} className='flex flex-col'>
                 <h1 className='font-bold text-2xl text-blue-500 my-5 text-center'>Registro de productos</h1>
                 <div className='flex flex-row'>
