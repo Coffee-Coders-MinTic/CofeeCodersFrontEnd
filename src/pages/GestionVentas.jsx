@@ -23,7 +23,7 @@ const GestionVentas=()=>{
         const obtenerGestionVentas = async ()=>{
             const options = {
                 method: 'GET',
-                url: 'http://localhost:5000/ventas/',
+                url: 'https://git.heroku.com/still-shelf-57648.git/ventas/',
                 headers: {'Content-Type': 'application/json', Authorization: getToken()}
               };
              await axios.request(options).then(function (response) {
@@ -93,7 +93,7 @@ const RegistroVentas=({setMostrarTabla, listaVentas, setVentas, getToken})=>{
 
             const options = {
                 method: 'POST',
-                url: 'http://localhost:5000/ventas/',
+                url: 'https://git.heroku.com/still-shelf-57648.git/ventas/',
                 headers: { 'Content-Type': 'application/json', Authorization: getToken() },
                 data: { iD: nuevaVenta.iD, total: nuevaVenta.total, cantidad: nuevaVenta.cantidad, preciounitario: nuevaVenta.preciounitario, fechaventa: nuevaVenta.fechaventa, vendedor: nuevaVenta.vendedor, identificacioncliente: nuevaVenta.identificacioncliente, nombrecliente: nuevaVenta.nombrecliente, estadoventa: nuevaVenta.estadoventa},
                 };
@@ -281,7 +281,7 @@ const FilaVentas = ({ventas, setConsulta, getToken})=>{
     const actualizarVentas = async ()=>{
         const options = {
             method: 'PATCH',
-            url: `http://localhost:5000/ventas/${ventas._id}`,
+            url: `https://git.heroku.com/still-shelf-57648.git/${ventas._id}`,
             headers: {'Content-Type': 'application/json', Authorization: getToken()},
             data: { ...infoEditarVentas },
           };
